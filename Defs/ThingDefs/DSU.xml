@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
+		<defName>mipDeepStorageI</defName>
+		<eType>BuildingComplex</eType>
+		<label>Deep Storage Unit Mk.I</label>
+		<thingClass>MD2.Building_DeepStorage</thingClass>
+    <graphicPath>Buildings/Deep Storage/DSU</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+    <statBases>
+    <MaxHealth>300</MaxHealth>
+    <Flammability>1.0</Flammability>
+    <WorkToMake>1200</WorkToMake>
+    </statBases>
+    <maxStorage>1000</maxStorage>
+		<description>A contained unit for storing large amounts of items</description>
+		<size>(2,1)</size>
+    <tickerType>Normal</tickerType>
+		<costList>
+      <Steel>100</Steel>
+      <WoodLog>20</WoodLog>
+		</costList>
+    <graphicOverdraw>false</graphicOverdraw>
+		<building>
+		<fixedStorageSettings>
+			<priority>Important</priority>
+			<allowances>
+				<categories>
+					<li>ResourcesRaw</li>
+          <li>Manufactured</li>
+				</categories>
+			</allowances>
+		</fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <allowances>
+          <categories>
+
+          </categories>
+        </allowances>
+      </defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationCategory>Misc</designationCategory>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <sunShadowInfo>
+      <baseWidth>0.1</baseWidth>
+      <baseHeight>0.1</baseHeight>
+      <tallness>0.2</tallness>
+    </sunShadowInfo>
+		<itemSurface>true</itemSurface>
+    <researchPrerequisite>StorageI</researchPrerequisite>
+	</ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
+    <defName>mipDeepStorageII</defName>
+    <eType>BuildingComplex</eType>
+    <label>Deep Storage Unit Mk.II</label>
+    <thingClass>MD2.Building_DeepStorage</thingClass>
+    <graphicPath>Buildings/Deep Storage/DSU</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <statBases>
+      <MaxHealth>400</MaxHealth>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2400</WorkToMake>
+    </statBases>
+    <maxStorage>1500</maxStorage>
+    <description>A contained unit for storing large amounts of items</description>
+    <size>(2,1)</size>
+    <tickerType>Normal</tickerType>
+    <costList>
+      <Steel>150</Steel>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <graphicOverdraw>false</graphicOverdraw>
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <allowances>
+          <categories>
+            <li>ResourcesRaw</li>
+            <li>Manufactured</li>
+          </categories>
+        </allowances>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <allowances>
+          <categories>
+
+          </categories>
+        </allowances>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Misc</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <sunShadowInfo>
+      <baseWidth>0.1</baseWidth>
+      <baseHeight>0.1</baseHeight>
+      <tallness>0.2</tallness>
+    </sunShadowInfo>
+    <itemSurface>true</itemSurface>
+    <researchPrerequisite>StorageII</researchPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
+    <defName>mipDeepStorageIII</defName>
+    <eType>BuildingComplex</eType>
+    <label>Deep Storage Unit Mk.III</label>
+    <thingClass>MD2.Building_DeepStorage</thingClass>
+    <graphicPath>Buildings/Deep Storage/DSU</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <statBases>
+      <MaxHealth>500</MaxHealth>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>3400</WorkToMake>
+    </statBases>
+    <maxStorage>2250</maxStorage>
+    <description>A contained unit for storing large amounts of items</description>
+    <size>(2,1)</size>
+    <tickerType>Normal</tickerType>
+    <costList>
+      <Steel>200</Steel>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <graphicOverdraw>false</graphicOverdraw>
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <allowances>
+          <categories>
+            <li>ResourcesRaw</li>
+            <li>Manufactured</li>
+          </categories>
+        </allowances>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <allowances>
+          <categories>
+
+          </categories>
+        </allowances>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Misc</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <sunShadowInfo>
+      <baseWidth>0.1</baseWidth>
+      <baseHeight>0.1</baseHeight>
+      <tallness>0.2</tallness>
+    </sunShadowInfo>
+    <itemSurface>true</itemSurface>
+    <researchPrerequisite>StorageIII</researchPrerequisite>
+  </ThingDef>
+
+</Buildings>
+    
+    
