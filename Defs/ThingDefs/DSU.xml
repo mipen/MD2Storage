@@ -16,7 +16,6 @@
 
   <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
 		<defName>mipDeepStorageI</defName>
-		<eType>BuildingComplex</eType>
 		<label>Deep Storage Unit Mk.I</label>
 		<thingClass>MD2.Building_DeepStorage</thingClass>
     <graphicPath>Buildings/Deep Storage/DSU</graphicPath>
@@ -25,7 +24,7 @@
 		<passability>Impassable</passability>
 		<castEdgeShadows>false</castEdgeShadows>
     <statBases>
-    <MaxHealth>300</MaxHealth>
+    <MaxHitPoints>300</MaxHitPoints>
     <Flammability>1.0</Flammability>
     <WorkToMake>1200</WorkToMake>
     </statBases>
@@ -62,18 +61,12 @@
 		</inspectorTabs>
 		<designationCategory>Misc</designationCategory>
 		<staticSunShadowHeight>0.2</staticSunShadowHeight>
-    <sunShadowInfo>
-      <baseWidth>0.1</baseWidth>
-      <baseHeight>0.1</baseHeight>
-      <tallness>0.2</tallness>
-    </sunShadowInfo>
 		<itemSurface>true</itemSurface>
     <researchPrerequisite>StorageI</researchPrerequisite>
 	</ThingDef>
 
   <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
     <defName>mipDeepStorageII</defName>
-    <eType>BuildingComplex</eType>
     <label>Deep Storage Unit Mk.II</label>
     <thingClass>MD2.Building_DeepStorage</thingClass>
     <graphicPath>Buildings/Deep Storage/DSU</graphicPath>
@@ -82,7 +75,7 @@
     <passability>Impassable</passability>
     <castEdgeShadows>false</castEdgeShadows>
     <statBases>
-      <MaxHealth>400</MaxHealth>
+      <MaxHitPoints>400</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <WorkToMake>2400</WorkToMake>
     </statBases>
@@ -119,18 +112,12 @@
     </inspectorTabs>
     <designationCategory>Misc</designationCategory>
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
-    <sunShadowInfo>
-      <baseWidth>0.1</baseWidth>
-      <baseHeight>0.1</baseHeight>
-      <tallness>0.2</tallness>
-    </sunShadowInfo>
     <itemSurface>true</itemSurface>
     <researchPrerequisite>StorageII</researchPrerequisite>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase" Class="MD2.DSUDef">
     <defName>mipDeepStorageIII</defName>
-    <eType>BuildingComplex</eType>
     <label>Deep Storage Unit Mk.III</label>
     <thingClass>MD2.Building_DeepStorage</thingClass>
     <graphicPath>Buildings/Deep Storage/DSU</graphicPath>
@@ -139,7 +126,7 @@
     <passability>Impassable</passability>
     <castEdgeShadows>false</castEdgeShadows>
     <statBases>
-      <MaxHealth>500</MaxHealth>
+      <MaxHitPoints>500</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <WorkToMake>3400</WorkToMake>
     </statBases>
@@ -176,11 +163,6 @@
     </inspectorTabs>
     <designationCategory>Misc</designationCategory>
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
-    <sunShadowInfo>
-      <baseWidth>0.1</baseWidth>
-      <baseHeight>0.1</baseHeight>
-      <tallness>0.2</tallness>
-    </sunShadowInfo>
     <itemSurface>true</itemSurface>
     <researchPrerequisite>StorageIII</researchPrerequisite>
   </ThingDef>
